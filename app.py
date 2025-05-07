@@ -30,6 +30,8 @@ async def verify(interaction: discord.Interaction, response: str):
             await interaction.user.add_roles(role)
             await interaction.user.remove_roles(old_role)
             await interaction.response.send_message("You have been verified! Please visit https://discordapp.com/channels/1368764933021634641/1368785712505159710 and read our rules to gain access to the rest of the server!", ephemeral=True)
+    else:
+        await interaction.response.send_message("That is not the correct answer! Please try again!", ephemeral=True)
 
 @bot.event
 async def on_interaction(interaction):
