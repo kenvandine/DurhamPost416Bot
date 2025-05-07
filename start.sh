@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-APP_ID=$(snapctl get app_id)
-BOT_TOKEN=$(snapctl get bot_token)
+APP_ID=$(snapctl get app-id)
+BOT_TOKEN=$(snapctl get bot-token)
 
 if [ -n "$APP_ID" ]; then
     echo "APP_ID required"
