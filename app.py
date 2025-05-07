@@ -7,7 +7,6 @@ intents.message_content = True
 intents.members = True
 
 application_id = os.environ['APP_ID']
-public_key = os.environ['PUBLIC_KEY']
 bot_token = os.environ['BOT_TOKEN']
 
 bot = commands.Bot(command_prefix='!', intents=intents, application_id=application_id)

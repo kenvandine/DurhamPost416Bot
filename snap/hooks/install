@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+snapctl set app-id="APP_ID"
+snapctl set bot-token="BOT_TOKEN"
