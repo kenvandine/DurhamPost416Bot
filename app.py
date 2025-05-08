@@ -34,7 +34,7 @@ async def verify(interaction: discord.Interaction, response: str):
 
 @bot.event
 async def on_interaction(interaction):
-    if interaction.channel.id == 1368800194996736030:  # Replace CHANNEL_ID with the ID of the channel you want to monitor
+    if interaction.channel.id == 1370116495224475769:  # Replace CHANNEL_ID with the ID of the channel you want to monitor
         if interaction.type == discord.InteractionType.application_command:  # Check if the interaction is an application command
             return
         else:
